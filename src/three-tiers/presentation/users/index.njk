@@ -1,0 +1,12 @@
+{% extends parentLayout %}
+
+{% block body %}
+<button
+    class="px-4 py-2 bg-green-200 hover:bg-green-100 rounded cursor-pointer"
+    hx-get="/three-tiers/users/shuffle"
+    hx-target="#users">
+        Shuffle users
+</button>
+
+{% include "three-tiers/presentation/users/partials/users.njk" %}
+{% endblock %}

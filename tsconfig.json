@@ -1,0 +1,12 @@
+{
+	"extends": "@tsconfig/node-lts/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./dist",
+		"baseUrl": "./src",
+		"paths": {
+			"@domain/*": ["clean-archi/domain/*"],
+			"@use-cases/*": ["clean-archi/use-cases/*"],
+			"@infrastructure/*": ["clean-archi/infrastructure/*"]
+		}
+	}
+}
