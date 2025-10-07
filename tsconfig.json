@@ -2,11 +2,14 @@
 	"extends": "@tsconfig/node-lts/tsconfig.json",
 	"compilerOptions": {
 		"outDir": "./dist",
+		"rootDir": "./src",
 		"baseUrl": "./src",
 		"paths": {
 			"@domain/*": ["clean-archi/domain/*"],
 			"@use-cases/*": ["clean-archi/use-cases/*"],
 			"@infrastructure/*": ["clean-archi/infrastructure/*"]
 		}
-	}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist", "e2e", "playwright.config.ts"]
 }
